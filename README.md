@@ -3,6 +3,8 @@
 👩‍💻 Soy una programadora joven con muchas ganas de aprender y mejorar en cada proyecto que realizo. 💡 La tecnología me apasiona, y siempre estoy buscando nuevas oportunidades para crecer y aplicar mis conocimientos. 🚀<br><br>🤝 Me encanta trabajar en equipo, resolver problemas y enfrentar desafíos que me permitan superarme. 🔍 Estoy lista para participar en proyectos interesantes y contribuir con mi energía y habilidades para lograr grandes resultados. 🎯
 
 
+Visita mi portafolio para conocer más sobre mis proyectos y habilidades en desarrollo web. https://celesgz.github.io/Celesgz/
+
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/maría-celeste-gz/) 
 
