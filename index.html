@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="es">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/movil.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Iconos -->
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
     <title>Index</title>
     
 </head>
@@ -20,7 +21,7 @@
                 &#9776; 
             </div>
             <div class="nav-extra">
-                <img src="imagenes/FotoMenu (1).jpg" alt="Foto Navegador" class="nav-img">
+                <img src="imagenes/FotoMenu.jpg" alt="Foto Navegador" class="nav-img">
                 <p class="nav-text">Celeste Gomez</p>
             </div>
             <ul id="nav-links">
@@ -34,15 +35,17 @@
 
     <!------------------------------- SECCION HOME ---------------------------->
     <section id="home">
+        <div class="contenidoHome">
+        <div class="column right-column">
+            <img src="imagenes/me.png" alt="foto perfil" class="imagenPerfil">  
+        </div>
         <div class="column left-column">
             <h2 class="left-column-titulo">¡Hola! Soy Celeste</h2>
             <p class="highlighted">
                 una <span class="highlight">desarrolladora web</span> enfocada en <span class="highlight">crear experiencias</span> digitales
             </p>
         </div>
-        <div class="column right-column">
-            <img src="imagenes/me.png" alt="foto perfil" class="imagenPerfil">  
-        </div>
+    </div>
     </section>
 
     <div class="sectionArrow">
@@ -164,7 +167,7 @@
         </div>
 
         <div class="containerpy">
-            <div class="project-content">
+            <div class="project-content revers">
                 <div class="columnP leftE">
                     <h3>MYSTERYQUIZ</h3>
                     <p>Mystery Quiz es un innovador proyecto universitario que combina la diversión del juego de trivia con un enfoque educativo. Los jugadores se enfrentan a una serie de preguntas intrigantes que desafían su conocimiento en diversas categorías. El objetivo es responder correctamente para avanzar y subir de nivel, lo que hace que cada sesión de juego sea única y emocionante.</p>
@@ -194,6 +197,7 @@
     </section>
    
     <!------------------------------- SECCION CONTACTO ---------------------------->
+
     <section id="contacto" class="contact-section">
         <div class="wave-top">
             <svg viewBox="0 0 1440 320">
@@ -202,35 +206,40 @@
         </div>
     
         <div class="contact-content">
-           
-            <div class="text-column">
-                <h1>CONTACTO</h1>
-                <p class="subtitleP">Si tienes una buena oportunidad que coincida con mis habilidades y experiencia, no dudes en contactarme.</p>
+            <div class="contact-card">
+                <img src="imagenes/me2.png" alt="Foto de contacto">
+                <h2>¡Hablemos!</h2>
+                <p class="description">
+                    Estoy abierta a nuevas oportunidades y proyectos interesantes. Escríbeme, ¡me encantaría conocerte!
+                </p>
+                <p class="frase">"La programación es el arte de organizar la complejidad." - Edsger Dijkstra</p>
                 <div class="icon-container">
                     <a href="https://www.linkedin.com/in/maria-celeste-gz/" target="_blank" class="icon linkedin"><i class="fab fa-linkedin"></i></a>
                     <a href="https://github.com/Celesgz" target="_blank" class="icon github"><i class="fab fa-github"></i></a>
                     <a href="mailto:gomezcelestet@gmail.com" class="icon email"><i class="fas fa-envelope"></i></a>
                 </div>
-    
-                <div class="frase">"Transformando ideas en realidad, un proyecto a la vez."</div>
-            </div>
-
-            <div class="image-column">
-                <img src="imagenes/me2.png" alt="Me">
             </div>
         </div>
     </section>
     
     
    <script>
-        document.getElementById("menu-icon").onclick = function() {
-            var navLinks = document.getElementById("nav-links");
-            if (navLinks.style.display === "block") {
-                navLinks.style.display = "none";
-            } else {
-                navLinks.style.display = "block";
-            }
-        };
+const menuIcon = document.getElementById('menu-icon');
+const navLinks = document.getElementById('nav-links');
+
+menuIcon.addEventListener('click', () => {
+    if (window.innerWidth <= 768) { 
+        navLinks.style.display = navLinks.style.display === 'none' ? 'flex' : 'none';
+    }
+});
+
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+        navLinks.style.display = 'flex';
+    } else {
+        navLinks.style.display = 'none'; 
+    }
+});
     </script>
 </body>
 </html>
