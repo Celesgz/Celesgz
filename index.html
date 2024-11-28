@@ -226,20 +226,19 @@
    <script>
 const menuIcon = document.getElementById('menu-icon');
 const navLinks = document.getElementById('nav-links');
-
 menuIcon.addEventListener('click', () => {
-    if (window.innerWidth <= 768) { 
-        navLinks.style.display = navLinks.style.display === 'none' ? 'flex' : 'none';
-    }
+    navLinks.style.display = navLinks.style.display === 'none' ? 'flex' : 'none';
 });
-
-window.addEventListener('resize', () => {
+// Configurar visibilidad inicial del menú según el tamaño de pantalla
+function setMenuVisibility() {
     if (window.innerWidth > 768) {
-        navLinks.style.display = 'flex';
+        navLinks.style.display = 'flex'; 
     } else {
         navLinks.style.display = 'none'; 
     }
-});
+}
+setMenuVisibility();
+window.addEventListener('resize', setMenuVisibility);
     </script>
 </body>
 </html>
