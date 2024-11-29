@@ -89,7 +89,7 @@ p{
 .justified-list {
     text-align: justify;
     list-style-type: disc;
-    margin-left: 10px;
+    /* margin-left: 10px; */
 }
 
 .tools {
