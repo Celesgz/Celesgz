@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -12,104 +14,16 @@ body , html {
     overflow-x: hidden;}
 
 
-#menu nav {
-    display: flex;
-    justify-content: space-between;
-            align-items: center;
-    padding: 0.875rem 1.25rem;
-    background-color: #0b001a;
-}
-.navbar {
-    position: fixed;
-    top: 0; 
-    width: 100%; 
-    padding: 10px 0; 
-    z-index: 1000; 
-}
-#nav-links {
-    display: flex; /* Mostrar menú */
-    gap: 1rem; /* Separación entre enlaces */
-}
-
-.nav-extra {
-    display: flex;
-    align-items: center;
-    margin-right: 2rem; 
-}
-
-.nav-img {
-    width: 3rem; 
-    height: 3rem;
-    border-radius: 50%; 
-    object-fit: cover; 
-    margin-right: 0.625rem;
-    border: 2px solid #6e1651; 
-}
-
-.nav-text {
-    color: #fff; 
-    font-size: 1.1rem; 
-    font-weight: bold; 
-    font-family: 'Courier Prime', monospace;
-}
-
-#menu nav ul {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    color: #fff;
-    margin-left: auto; 
-}
-
-#menu nav ul li {
-    margin: 0 1.5rem; 
-}
-
-#menu nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-family: 'Courier Prime', monospace;
-    position: relative;
-    display: block;
-    text-align: center;
-}
-
-#menu nav ul li a::before {
-   
-    margin-right: 0.25rem;
-    color: #fff;
-    opacity: 0.6;
-    font-weight: normal;
-}
-
-.menu-number {
-    display: block;
-    font-size: 0.75rem;
-    color: #ff69b4;
-    margin-bottom: 0.25rem;
-    font-weight: normal;
-    opacity: 0.8;
-    text-align: right;
-
-}
-
-.menu-icon {
-    display: none; 
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: #fff;
-    margin-left: auto;
-}
 
 #home{
     display: flex;
     align-items: center; 
     justify-content: center; 
     padding: 1.25rem;
-    background-image: url(../imagenes/fondoIndex.jpg); 
+    background-image: url(../imagenes/fondoIndex.jpg) ; 
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 100vh;
-
     margin: 0 auto; 
     padding: 0;
     width: 100%; 
@@ -381,9 +295,12 @@ h1 {
 .columnP h3{
     margin-bottom: 0;
 }
+
 .show-btn {
+    display: inline-block; 
     font-size: 1rem;
     color: #ffffff;
+    text-decoration: none;
     background-image: radial-gradient(circle farthest-corner at 3.2% 49.6%, rgba(80, 12, 139, 0.87) 0%, rgba(161, 10, 144, 0.72) 83.6%);
     padding: 10px 20px;
     border: none;
@@ -415,8 +332,8 @@ h1 {
 .show-btn:hover {
     background: linear-gradient(to right, #b24bf3, #421158);
     color: #ffffff;
-
 }
+
 
 /*-------------------------------------SECCIÓN contacto--------------------*/
 
@@ -429,6 +346,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .contact-content {
@@ -444,7 +362,7 @@ h1 {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
     text-align: center;
     max-width: 600px;
-    margin-top: 65px;
+    margin-top: 105px;
 
 }
 
@@ -477,7 +395,7 @@ h1 {
 }
 .wave-top {
     position: absolute;
-    top: -150px; 
+    top: -90px; 
     right: 0;
     left: 0;
     width: 110%;

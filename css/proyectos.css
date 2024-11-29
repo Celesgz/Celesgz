@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier Prime', monospace !important;
+    margin: 0;
+    padding: 0;
+
+}
+p{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Sección About */
+#about {
+    padding: 3rem 5rem;
+    background-color: #0b001a;
+    color: white;
+}
+
+#about h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-family: 'Courier Prime', monospace;
+}
+
+/* Contenedor en dos columnas */
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-container h2{
+    text-align: left;
+    color: #e07eca;
+    font-size: 1.3rem; 
+    margin: 20px 0 8px 0;
+    letter-spacing: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+.about-container h4{
+    text-align: left;
+    color: #fff;
+    font-size: 1rem; 
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+/* Columnas */
+.column {
+    /* flex: 1;
+    min-width: 300px;  */
+    padding: 20px;
+}
+.column:nth-child(1){
+    width:100% !important; 
+}
+.technologies-container {
+    display: flex;
+     gap: 80px;
+}
+.technologies-container:nth-child(1){
+    min-width:50% !important; 
+}
+
+
+.left {
+    text-align: justify;
+}
+
+.right {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Estilo de herramientas */
+.justified-list {
+    text-align: justify;
+    list-style-type: disc;
+    margin-left: 10px;
+}
+
+.tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tool {
+    background-image: radial-gradient(circle farthest-corner at 3.2% 49.6%, rgba(80, 12, 139, 0.87) 0%, rgba(161, 10, 144, 0.72) 83.6%);
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: left;
+    transition: background-color 0.3s, color 0.3s;
+    color: #b68db2;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.tool:hover {
+    background-color: #e07eca;
+    color: #ffffff;
+}
+
+.tool i {
+    font-size: 1.5rem;
+}
+
+.right h4 {
+    color: white;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+footer {
+    background: linear-gradient(135deg, rgba(48, 7, 83, 0.95), rgba(161, 10, 144, 0.8));
+    color: white;
+    padding: 0.7rem ;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.icon {
+    font-size: 1.6em;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 15px;
+    transition: all 0.3s ease-in-out;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+
+}
+
+.icon:hover {
+    transform: scale(1.2);
+    background: #ff6ec7;
+    color: white;
+}
+
+.icon:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.2);
+    color: #ff6ec7;
+}
+
+.icon-container a {
+    text-decoration: none;
+}
+ .mt{
+    margin-top: 50px !important;
+ }
+ .mt2{
+    margin-top: 20px !important;
+ }
+
+@media (max-width: 768px) {
+    #about {
+        padding: 2rem 3rem;
+       
+    }
+    #about h1 {
+        font-size: 1.7rem;
+    }
+    .left h2 {
+        font-size: 1.3rem !important;
+    }
+    #about p , .about-container p  , .about-container ul{
+        font-size:0.9rem;
+    }
+    .about-container h2{
+        margin: 10px 0 8px 0 !important;
+    }
+   .icon-container{
+    margin: 0 !important;
+   }
+   .technologies-container{
+    width: 100%;
+    display: block;
+   }
+}
